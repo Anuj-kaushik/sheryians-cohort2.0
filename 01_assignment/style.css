@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+  font-family: "Bechame";
+  src: url(./fonts/BechamRoughDemoRegular-e9edB.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif; 
+}
+
+main#hero {
+  min-height: 100%;
+  width: 100%;
+  background-color: #F6F8FA;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+main header {
+  padding: 50px 0;
+  background-color: #1A2434;
+  color: white;
+}
+
+header h1 {
+  font-size: 42px;
+  font-family: "Bechame", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+header p {
+  color: #CAD4E2;
+  /* text-transform: capitalize; */
+  font-style: italic; 
+}
+
+#about-me {
+  padding: 80px 30px;
+  background-color: #FFF;
+}
+
+#about-me:hover {
+  background-color: #ECECEC;
+}
+
+#about-me p {
+  margin-top: 15px;
+  color: #868384;
+}
+
+#education {
+  background-color: #CDE2F0;
+}
+
+#education:hover {
+  background-color: #bbd5e6;
+}
+
+#education p {
+  background-color: #efeffd;
+}
+
+#skills {
+  background-color: #fef0bf;
+}
+
+#skills:hover {
+  background-color: #ffe895;
+}
+
+#skills p {
+  background-color: #fefefe;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#projects{
+  background-color: #EBE6FE;
+}
+
+#projects:hover {
+  background-color: #d6d0ee;
+}
+
+
+
+#projects p{
+  background-color: #fff;
+  font-style: italic;
+}
+
+#contact-me{
+  background-color: #C7E9D2;
+}
+
+#contact-me:hover {
+  background-color: #bef1c7;
+}
+
+
+#contact-me p{
+  background-color: #fbfff6;
+}
+
+footer{
+  text-transform: uppercase;
+  background-color: #1a2434;
+  padding: 20px 0;
+  color: white;
+  font-size: 12px;
+}
+
+/* utilities */
+
+section {
+  width: 90%;
+  margin: 20px auto;
+  padding: 30px;
+  /* background-color: red; */
+  border-radius: 10px;
+  scale: 1;
+  transition: all 300ms ease-in-out;
+}
+
+section:hover{
+  scale: 1.01;
+  transition: all 300ms ease-in-out;
+
+
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+p.badge {
+  border-radius: 4px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 10px;
+  margin-top: 5px;
+}
+
