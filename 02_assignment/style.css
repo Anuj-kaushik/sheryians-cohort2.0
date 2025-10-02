@@ -110,6 +110,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  /* background-color: red; */
 }
 
 main h1 {
@@ -119,6 +120,8 @@ main h1 {
   text-wrap: wrap;
   font-weight: 100;
   font-family: "Travel", sans-serif;
+  /* background-color: blue; */
+  width: 80%;
   
 }
 
@@ -128,6 +131,8 @@ main p {
   font-weight: 500;
   font-style: italic;
   color: rgb(216, 216, 216);
+  width: 80%;
+  /* background-color: white; */
 }
 
 main .action-btn {
