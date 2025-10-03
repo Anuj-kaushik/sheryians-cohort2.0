@@ -127,7 +127,7 @@ main .wrapper h1 {
   align-items: center;
   gap: 10px;
   top: 35%;
-  left: 6%;
+  left: 7%;
   /* background-color: yellow; */
 }
 
@@ -152,7 +152,7 @@ main .wrapper #shirt {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 550px;
+  height: 500px;
   z-index: 2; /* shirt in middle */
 }
 
@@ -253,8 +253,8 @@ footer .footer-images {
 }
 
 footer .footer-images div {
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   background-color: #1d2a2e;
 
   border-radius: 10px;
