@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+.container {
+  height: 92%;
+  width: 100%;
+  background-color: #dadada;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header{
+  height: 8%;
+  width: 100%;
+  /* background-color: red; */
+}
+
+header nav{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 2rem; */
+  padding: 0 2rem;
+}
+
+.logo{
+  font-size: clamp(1.5rem, 8vw, 2rem );
+  font-weight: 500;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #222;
+  font-size: medium;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover{
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+
+}
+
+.nav-links .menu{
+  display: none;
+}
+
+
+
+.card {
+  height: 21rem;
+  width: 14rem;
+  background-color: #222;
+  border-radius: 20px;
+  padding: 0.5rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.card .image {
+  height: 60%;
+  width: 100%;
+}
+
+.card .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card .details {
+  height: 40%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  top: 0%;
+  left: 0;
+  /* background-color: red; */
+}
+
+.card .details .heading {
+  /* background-color: green; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.details .heading h1 {
+  font-size: clamp(0.7rem, 8vw, 1.2rem);
+}
+
+.details .heading img {
+  height: 1.3rem;
+}
+
+.details .description {
+  margin-top: 0.5rem;
+  font-size: clamp(0.5rem, 8vw, 0.8rem);
+}
+
+.details .links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  text-shadow: 0px 0px 0.1px black;
+}
+
+.details .links button {
+  all: unset;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  background-color: #111;
+  font-size: clamp(0.3rem, 8vw, 1rem);
+  transition: all 0.3s ease-in-out;
+}
+
+.card .image:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.details .links button:hover {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 640px) {
+  .container{
+    height: fit-content;
+    padding: 1rem 0;
+  }
+
+  .nav-links a{
+    display: none;
+  }
+  .nav-links .menu{
+    display: block;
+  }
+
+}
