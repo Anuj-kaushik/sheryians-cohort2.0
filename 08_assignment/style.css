@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@font-face {
+  font-family: sk;
+  src: url(./fonts/SK\ Reykjavik\ Rounded\ Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  /* background-color: crimson; */
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  font-family: "sk", sans-serif;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 5rem;
+}
+
+nav .left-nav {
+  /* background-color: red;  */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+nav .left-nav > div {
+  height: 100%;
+  width: 7%;
+  /* background-color: pink; */
+}
+
+nav .left-nav h2 {
+  /* background-color: yellowgreen; */
+  font-size: clamp(1rem, 8vw, 1.5rem);
+}
+
+nav .left-nav img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+nav .center-nav {
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 100;
+}
+nav .right-nav {
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .right-nav span {
+  font-size: clamp(0.8rem, 8vw, 1rem);
+  /* background-color: pink; */
+  cursor: pointer;
+}
+
+nav .right-nav button {
+  all: unset;
+  padding: 0.2rem 0.2rem 0.2rem 1rem;
+  border-radius: 20vw;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c313f;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: clamp(0.5rem, 8vw, 0.8rem);
+  /* background-color: green; */
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+
+nav .right-nav button i {
+  background-color: #bac3ff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 100%;
+  color: black;
+}
+
+nav .right-nav button:hover {
+  background-color: #fff;
+  color: #1f243d;
+}
+
+
+
+main {
+  /* background-color: crimson; */
+  height: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  /* grid-template-columns: 1fr  */
+  padding: 1rem 5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+main .left-main {
+  /* background-color: yellowgreen; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+main .left-main > div:first-child {
+  width: 100%;
+  /* background-color: red; */
+}
+
+main .left-main div:first-child h1 {
+  /* background-color: mediumslateblue; */
+  font-size: clamp(4rem, 8vw, 4.5rem);
+  font-weight: 500;
+  display: inline;
+  line-height: 1.3;
+  letter-spacing: -2px;
+}
+
+main .left-main div:first-child h1 span {
+  display: block;
+  /* background-color: red; */
+}
+
+main .left-main div:first-child h1 span:nth-child(1) {
+  display: inline;
+  margin-left: 1rem;
+}
+main .left-main div:first-child h1 span:nth-child(3) {
+  /* background-color: blue; */
+  position: relative;
+}
+
+main .left-main div:first-child img {
+  height: 3rem;
+  width: 9vw;
+  border-radius: 20vw;
+  display: inline;
+}
+
+main .left-main div:first-child h1 button {
+  all: unset;
+  border-radius: 20vw;
+  border: 2px solid black;
+  padding: 0.6rem 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 1.2rem;
+  left: 60%;
+  padding-top: 10px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+main .left-main div:first-child h1 button i {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+main .left-main div:first-child h1 button span {
+  font-size: clamp(0.2rem, 8vw, 0.8rem);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+
+main .left-main div:first-child h1 button:hover{
+  color:white;
+  background-color: #1f243d;
+}
+
+main .left-main div:first-child .cta {
+  /* background-color: green; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+main .left-main div:first-child .cta > button {
+  all: unset;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20vw;
+  border: 1px solid #1f243d;
+  font-size: clamp(0.5rem, 8vw, 0.9rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #1f243d;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+main .left-main div:first-child .cta > button span {
+  font-size: clamp(0.4rem, 8vw, 0.8rem);
+  /* background-color: red; */
+}
+
+main .left-main div:first-child .cta > button i {
+  font-size: 1.3rem;
+}
+
+main .left-main div:first-child .cta > span {
+  /* background-color: red; */
+  font-size: clamp(0.4rem, 8vw, 0.8rem);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+main .left-main div:first-child .cta > button:hover {
+  background-color: #fff;
+  color: #1f243d;
+}
+
+main .left-main > div:last-child {
+  /* background-color: pink; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+main .left-main > div:last-child .description {
+  /* background-color: red; */
+  width: 100%;
+}
+
+main .left-main > div:last-child .description p {
+  /* background-color: blue; */
+  width: 100%;
+}
+
+main .left-main > div:last-child .description > p span {
+  display: block;
+  width: 100%;
+  font-size: clamp(0.5rem, 8vw, 0.8rem);
+  /* background-color: green; */
+}
+
+main .left-main > div:last-child .images {
+  /* background-color: darkgoldenrod; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+main .left-main > div:last-child .images img {
+  /* width: 4rem; */
+  height: 1.4rem;
+}
+
+main .right-main {
+  /* background-color: rgba(255, 192, 203, 0.449); */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+main .right-main .right-top {
+  /* background-color: red; */
+  grid-column: span 2;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+main .right-main .right-bottom {
+  /* background-color: blue; */
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+main .right-main .right-bottom .right-bottom-left {
+  /* background-color: yellow; */
+  grid-column: 1/2;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main .right-main .right-bottom .right-bottom-right {
+  /* background-color: green; */
+  grid-column: 2/3;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main .right-main .hero-images {
+  height: 100%;
+  width: 100%;
+  border-radius: 2vw;
+}
+
+@media (max-width: 1000px) {
+  header nav .center-nav {
+    display: none;
+  }
+
+  main .left-main {
+    grid-column: span 2;
+    height: 100vh;
+   
+  }
+  main .right-main {
+    grid-column: span 2;
+    height: 100vh;
+  }
+}
+
+
+/* utilities */
+a {
+  text-decoration: none;
+  font-size: clamp(0.6rem, 8vw, 0.9rem);
+  color: rgba(0, 0, 0, 0.801);
+}
+
+button {
+  cursor: pointer;
+}
