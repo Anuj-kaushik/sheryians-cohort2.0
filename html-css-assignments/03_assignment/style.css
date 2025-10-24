@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #e2e2e2;
+  color: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 0 30px;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-links ul li {
+  list-style: none;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #202020;
+  letter-spacing: 1.01px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.nav-links ul li a:hover {
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+  transition: all 300ms ease-in-out;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: larger;
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+  /* background-color: red; */
+  height: 100%;
+}
+
+main h1 {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  /* background-color: yellow; */
+  font-size: 275px;
+  text-transform: capitalize;
+  font-weight: 400;
+  z-index: 99;
+}
+
+main section {
+  margin-top: 70px;
+
+  width: 20%;
+  padding: 0px 30px;
+}
+
+main section:nth-child(3) {
+  /* background-color: yellow; */
+  margin-top: 30px;
+}
+
+main section h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+main section p {
+  margin-top: 4px;
+}
+
+footer {
+  display: flex;
+  /* background-color: pink; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+footer span:first-of-type {
+  /* background-color: red; */
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+footer span:last-child {
+  /* background-color: red; */
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-bottom: 1px solid #202020;
+}
+
+footer span:last-child a {
+  text-decoration: none;
+  color: #202020;
+  /* text-decoration: underline; */
+}
+footer span:last-child img {
+  height: 20px;
+}
+
+main > img {
+  height: 200px;
+  position: absolute;
+  /* top: 0; */
+  /* width: 300px; */
+}
+
+#image-one {
+  top: 40%;
+  left: 64%;
+  height: 350px;
+  z-index: 199;
+}
+#image-two {
+  top: 70%;
+  left: 55%;
+  height: 220px;
+  z-index: 99;
+}
+#image-three {
+  top: 48%;
+  left: 47%;
+  height: 250px;
+}

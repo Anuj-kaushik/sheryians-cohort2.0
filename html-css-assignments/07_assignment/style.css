@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+
+  /* background-color: yellow; */
+}
+
+header nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15rem;
+}
+
+nav .left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav .left-nav > div {
+  height: 3rem;
+  width: 3rem;
+  /* background-color: red; */
+}
+
+nav .left-nav > div img {
+  height: 100%;
+}
+
+nav .left-nav h2 {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+nav .center-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+nav .center-nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: clamp(0.4rem, 4vw, 0.8rem);
+}
+
+nav .right-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta {
+  padding: 0.7rem 1.2rem;
+  border-radius: 20vw;
+  color: #0260fd;
+  border: 1px solid #0260fd;
+  font-size: clamp(0.3rem, 4vw, 0.8rem);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.get-started {
+  background-color: #0260fd;
+  color: #c5d8f9;
+}
+.get-started:hover {
+  color: #0260fd;
+  background-color: white;
+}
+
+.page01 {
+  display: grid;
+  background-color: #f6f7f9;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  padding: 1rem 15rem;
+  height: 90%;
+  gap: 1rem 0;
+}
+
+.page01 > :first-child {
+  /* background-color: red; */
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: -1px;
+  padding: 1rem 0;
+}
+
+.page01 > :nth-child(2) {
+  /* background-color: crimson; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: gray;
+  padding: 1rem 0;
+}
+
+.page01 > :nth-child(2) p {
+  font-size: clamp(0.9rem, 8px, 1.2rem);
+}
+.page01 > :nth-child(2) .btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: red; */
+}
+
+.page01 > :nth-child(2) .btn button {
+  font-size: clamp(0.5rem, 4vw, 0.8rem);
+  padding: 0.8rem 1rem;
+}
+
+.page01 > :last-child {
+  grid-column: span 2;
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  min-height: 0;
+}
+
+.page01 > :last-child .hero-image {
+  /* background-color: pink; */
+  width: 100%;
+  height: 100%;
+  /* grid-column: span 2; */
+}
+
+.page01 > :last-child .hero-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.page02 {
+  height: 100%;
+  width: 100%;
+  /* background-color: purple;   */
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.page02 .details {
+  height: 100%;
+  width: 100%;
+  grid-row: 1 / 2;
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem 10rem;
+  place-items: center;
+}
+
+.page02 .details > div {
+  /* background-color: red; */
+  text-align: center;
+}
+
+.page02 .details > div p {
+  font-size: clamp(2rem, 8vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+.page02 .details > div span {
+  display: block;
+  font-size: clamp(0.5rem, 8vw, 0.7rem);
+  color: gray;
+}
+
+.page02 .page02-main {
+  height: 100%;
+  width: 100%;
+  grid-row: 2 /3;
+  /* background-color: mediumorchid; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 15rem;
+  min-height: 0;
+  background-color: #f6f7f9;
+}
+
+.page02 .page02-main .left-page02-main {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 2rem;
+  min-height: 0;
+}
+button.badge {
+  all: unset;
+  padding: 0.5rem 1rem;
+  border-radius: 20vw;
+  border: 1px solid #535557;
+  color: #535557;
+  font-size: clamp(0.5rem, 8vw, 0.8rem);
+  /* background-color: red; */
+}
+
+h2.heading {
+  font-size: clamp(1rem, 8vw, 1.8rem);
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+h2.heading span {
+  display: block;
+}
+
+p.description {
+  color: #535557;
+  font-weight: 300;
+  font-size: clamp(0.8rem, 8vw, 1rem);
+  /* background-color: red; */
+}
+
+.page02 .page02-main .right-page02-main {
+  /* background-color: mediumblue; */
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  min-height: 0;
+}
+
+.page02 .page02-main .right-page02-main > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* background-color: pink; */
+  /* overflow: hidden; */
+}
+
+.page02 .page02-main .right-page02-main > div img {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.page03 {
+  height: 120%;
+  width: 100%;
+  padding: 1rem 15rem;
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  /* background-color: lightblue; */
+  margin-top: 10rem;
+}
+
+.page03 .expertise {
+  /* background-color: mediumaquamarine; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.page03 .expertise > :first-child {
+  /* background-color: green; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.page03 .expertise > :nth-child(2) {
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page03 .expertise > :nth-child(2) p {
+  font-size: clamp(0.5rem, 8vw, 0.8rem);
+}
+
+.page03 .cards {
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: start;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  min-height: 0;
+}
+
+.page03 .cards .card {
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+  /* border-radius: 50px; */
+  min-height: 0;
+}
+
+.page03 .cards .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: top;
+  /* border-radius: 40px; */
+}
+
+.page04 {
+  height: 120%;
+  width: 100%;
+  padding: 1rem 15rem;
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  background-color: lightblue;
+}
+
+.page04 .milestones {
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  margin-top: 3rem;
+}
+
+.page04 .milestones > :first-child {
+  /* background-color: pink; */
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 1rem;
+}
+
+.page04 .milestones > :nth-child(2) {
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page04 .milestones > :nth-child(2) p {
+  font-size: clamp(0.5rem, 8vw, 0.8rem);
+}
+
+.page04-main {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.page04 .page04-main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: mediumblue; */
+}
+
+.page04 .page04-main > div .page04-image {
+  /* background-color: #fff; */
+  height: 60%;
+  width: 100%;
+  min-height: 0;
+}
+
+.page04 .page04-main > div .page04-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+
+.page04 .page02-main
+
+/* .page04 .page04-main .page04-main-right {
+  background-color: pink;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  align-items: flex-start; 
+  gap: 1rem; 
+  padding: 2rem;
+} */
+
+/* .page04 .page04-main .page04-main-right > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+} */

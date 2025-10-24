@@ -1,0 +1,197 @@
+:root {
+  --primary-color: #D5F903;
+}
+
+@font-face {
+  font-family: lufgaRegular;
+  src: url(./fonts/lufga/LufgaRegular.ttf);
+}
+@font-face {
+  font-family: lufgaThin;
+  src: url(./fonts/lufga/LufgaThin.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: "lufgaRegular", sans-serif;
+  background-color: blue;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #111111;
+  padding: 0 10rem;
+  /* background-color: red; */
+}
+
+header {
+  /* height: 20%; */
+  width: 100%;
+  /* background-color: crimson; */
+}
+
+nav {
+  height: 100%;
+  padding: 1rem;
+  /* background-color: yellow;   */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+nav .logo {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+nav .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20vw;
+  padding: 0rem 2rem;
+  gap: 2rem;
+  background-color: #222;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 0;
+  font-size: clamp(0.6rem, 2vw, 0.9rem);
+}
+
+nav .nav-links a:hover {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+nav .nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .nav-btn i {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+nav .nav-btn .cta {
+  all: unset;
+  padding: 1rem 1.5rem;
+  border-radius: 20vw;
+  border: 2px solid var(--primary-color);
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .nav-btn .cta:hover{
+  background-color: var(--primary-color);
+  color: black;
+}
+
+
+
+/* page 1 */
+.page1{
+  /* background-color: crimson; */
+  height: 85%;
+  position: relative;
+}
+
+main{
+  /* background-color: royalblue; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main h1{
+  /* height: 20vh; */
+  width: 100vw;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+}
+
+/* main h1 span:first-of-type,
+main h1 span:last-child {
+  height: 100%;
+} */
+
+
+main h1 span:first-of-type{ 
+  font-family: "lufgaThin", sans-serif;
+  font-weight: 600;
+}
+
+/* main h1 span:last-child{
+  line-height: 1.2;
+  height: 100%;
+  background-color: green;
+} */
+
+main h1 span img{
+  height: 2rem;
+}
+
+
+main .description{
+  height: 70%;
+  width: 100%;
+  background-image: url(./assets/hero.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.description .crown-monkey{
+  height: 6rem;
+  position: absolute;
+  /* background-color: crimson; */
+  width: 13rem;
+  top: 30vh;
+  /* left: 8vw; */
+}
+
+.crown-monkey .image{
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  height: 100%;
+  /* width: 100%; */
+}
+.crown-monkey img{
+  /* height: 8rem; */
+  /* background-color: white ; */
+  height: 100%;
+  /* width: fit-content; */
+  /* background-color: yellow; */
+  border-radius: 50%; 
+}
