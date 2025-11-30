@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Changer</title>
+    <style>
+      *{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      }
+      html, body{
+          height: 100%;
+          width: 100%;
+      }
+      main{
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      #container{
+        height: 300px;
+        width: 500px;
+        border-radius: 8px;
+        border: 2px solid white;
+        background-color: crimson;
+        font-size: 2rem;
+        color: white;
+        padding: 1rem;
+      }
+      button{
+        all: unset;
+        padding: 0.5rem 1rem;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        background-color: royalblue;
+        color: white;
+        cursor: pointer;
+      }
+      button:active{
+        scale: 0.95;
+        background-color: rgb(32, 64, 160);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="container"></div>
+      <button>Change!!!</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

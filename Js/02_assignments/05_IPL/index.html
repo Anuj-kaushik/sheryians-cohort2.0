@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Team</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      main {
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      button {
+        all: unset;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background-color: royalblue;
+        color: white;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      button:active {
+        scale: 0.95;
+        background-color: rgb(39, 74, 180);
+      }
+
+      div#info {
+        height: 250px;
+        width: 500px;
+        background-color: crimson;
+        color: white;
+        border-radius: 8px;
+        border: 5px solid white;
+        padding: 1rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      #two {
+        height: 100px;
+        width: 100px;
+      }
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="info">
+        <div id="one">
+          <h1>CSK</h1>
+          <p id="fullName">Chennai Super Kings</p>
+          <p>Cap: <span>MS Dhoni</span></p>
+          <p id="wins">Wins: 4</p>
+        </div>
+        <div id="two">
+          <img src="https://placehold.co/100x100" alt="" />
+        </div>
+      </div>
+
+      <button>Change</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
