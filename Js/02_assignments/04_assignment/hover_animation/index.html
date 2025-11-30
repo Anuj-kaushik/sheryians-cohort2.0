@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Image Hovering Animation</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      main {
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        /* position: relative; */
+      }
+      .elem {
+        flex: 1;
+        background-color: #111;
+        height: 100px;
+        border-bottom: 2px solid white;
+        /* display: flex; */
+        position: relative;
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 5rem;
+        padding: 1rem;
+        user-select: none;
+      }
+      img {
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        /* transform: translate(-50%,-50%); */
+        mix-blend-mode: difference;
+        opacity: 0; 
+        /* transition: opacity 0.2s ease, left 0.1s linear, top 0.1s linear; */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="elem" id="elem1">
+        <h1>Brazil</h1>
+        <img
+          src="https://images.unsplash.com/photo-1528238344097-a8994f7c74e4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <div class="elem" id="elem2">
+        <h1>Russia</h1>
+        <img
+          src="https://images.unsplash.com/photo-1599948058230-78896e742f7e?q=80&w=1082&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <div class="elem" id="elem3">
+        <h1>India</h1>
+        <img
+          src="https://images.unsplash.com/photo-1511216113906-8f57bb83e776?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <div class="elem" id="elem4">
+        <h1>China</h1>
+        <img
+          src="https://images.unsplash.com/photo-1525382455947-f319bc05fb35?q=80&w=896&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <div class="elem" id="elem5">
+        <h1>South Africa</h1>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661810799921-ded27d475104?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

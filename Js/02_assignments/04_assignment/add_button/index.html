@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a friend feature with same button</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      main {
+        height: 100%;
+        width: 100%;
+        background-color: cornflowerblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      #card {
+        height: 400px;
+        width: 300px;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 1.5rem;
+      }
+      img {
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+      h5 {
+        color: crimson;
+        font-size: 1.5rem;
+      }
+      button {
+        all: unset;
+        font-family: sans-serif;
+        padding: 12px 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        margin-top: 3rem;
+        font-weight: 700;
+        cursor: pointer;
+        background-color: #dadada;
+      }
+      .add {
+        background-color: cornflowerblue;
+        color: white;
+      }
+      .add:hover {
+        background-color: rgb(56, 101, 184);
+      }
+
+      .remove {
+        background-color: #dadada;
+        color: black;
+      }
+      .remove:hover {
+        background-color: #bababa;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="card">
+        <!-- <img src="https://placehold.co/100x100" alt="" /> -->
+        <img
+          src="https://images.unsplash.com/photo-1763718205007-fb085a276026?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <h1>Dogesh</h1>
+        <h5>Stranger</h5>
+        <button id="btn" class="add">Add Friend</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
