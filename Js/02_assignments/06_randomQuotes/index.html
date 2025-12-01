@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        color: white;
+        overflow: hidden;
+      }
+      main {
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        overflow: hidden;
+        position: relative;
+      }
+      button {
+        all: unset;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        background-color: crimson;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        font-weight: 600;
+        position: relative;
+        z-index: 99;
+      }
+      button:active {
+        scale: 0.95;
+        background-color: rgb(189, 8, 44);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <button>Click</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
