@@ -1,7 +1,7 @@
 let like = document.querySelector("#love");
 let imgContainer = document.querySelector("#imgContainer");
 
-imgContainer.addEventListener("click", () => {
+imgContainer.addEventListener("dblclick", () => {
   console.log("hello");
 
   like.style.transform = "translate(-50%, -50%) scale(2) rotate(0deg)";
